@@ -1,1 +1,11 @@
 StudyWalaEnv
+*.pyc
+__pycache__/
+env/
+venv/
+*.pyc
+__pycache__/
+env/
+venv/
+StudyWalaEnv/
+
