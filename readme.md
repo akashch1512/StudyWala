@@ -10,8 +10,8 @@
 ├── projects/                  # Project support/help section<br>
 ├── pyqs/                      # Previous Year Questions<br>
 ├── resources/                 # Notes & Assignments<br>
-├── static/                    # Folder for static files (CSS, JS, images)
-├── templates/                 # Folder for HTML files 
+├── static/                    # Folder for static files (CSS, JS, images)<br>
+├── templates/                 # Folder for HTML files<br>
 └── StudyWala/                 # Main Django configuration<br>
 
 ---
