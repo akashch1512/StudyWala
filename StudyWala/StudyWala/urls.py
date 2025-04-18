@@ -20,4 +20,9 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('dashboard.urls')),  # root URL points to dashboard app
+    path('projects/', include('projects.urls')),  # root URL points to projects app
+    path('pyqs/', include('pyqs.urls')),  # root URL points to pyqs app
+    path('resources/', include('resources.urls')),  # root URL points to resources app
+    path('accounts/', include('accounts.urls')),  # root URL points to accounts app
+    path('community/', include('community.urls')),  # root URL points to community app
 ]
