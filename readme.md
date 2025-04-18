@@ -1,4 +1,7 @@
                                         THE PROJECT IS IN BULIDING STATE
+
+Live At - https://mgmustudywala.vercel.app/
+
 # 🎓 StudyWala @JNEC
 ## Project Flow In StudyWala
 
