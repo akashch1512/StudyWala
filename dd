@@ -1,0 +1,16 @@
+[33m41ea13a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to HEAD~1
+[33m6d8f886[m HEAD@{1}: reset: moving to HEAD~1
+[33m3b2ec9b[m HEAD@{2}: reset: moving to HEAD~1
+[33m617c133[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{3}: pull --tags origin main: Merge made by the 'ort' strategy.
+[33m3b2ec9b[m HEAD@{4}: commit: gone back
+[33m6d8f886[m HEAD@{5}: reset: moving to HEAD~1
+[33m20a1ad5[m HEAD@{6}: reset: moving to HEAD~1
+[33mc1c0d67[m HEAD@{7}: commit: some minor dissbling of servrr
+[33m20a1ad5[m HEAD@{8}: commit: signup dummy page added
+[33m6d8f886[m HEAD@{9}: commit: login funcatiolity basic added
+[33m41ea13a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{10}: commit: urls.py added in each app
+[33m57e7079[m HEAD@{11}: pull --tags origin main: Merge made by the 'ort' strategy.
+[33m8882e94[m HEAD@{12}: commit: minor chnages in urls.py
+[33mc787012[m HEAD@{13}: pull --tags origin main: Merge made by the 'ort' strategy.
+[33m2f64a5f[m HEAD@{14}: commit: Deployment Adjustments
+[33mb4e0de0[m HEAD@{15}: commit (initial): Project Basic Outline Created
