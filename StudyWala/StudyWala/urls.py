@@ -23,6 +23,6 @@ urlpatterns = [
     path('projects/', include('projects.urls')),  # root URL points to projects app
     path('pyqs/', include('pyqs.urls')),  # root URL points to pyqs app
     path('resources/', include('resources.urls')),  # root URL points to resources app
-    path('accounts/', include('accounts.urls')),  # root URL points to accounts app
+    path('accounts/', include('accounts.urls')),
     path('community/', include('community.urls')),  # root URL points to community app
 ]
