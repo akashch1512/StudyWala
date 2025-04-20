@@ -139,3 +139,13 @@ LOGIN_REDIRECT_URL = '/'  # or your desired page
 LOGOUT_REDIRECT_URL = '/accounts/login/'  # Or the URL of your login page
 
 
+# temp
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+]
+
+# Disable updating last_login
+AUTHENTICATION_BACKENDS = ['StudyWala.auth_backend.NoLastLoginBackend']
+
+
+
