@@ -51,17 +51,3 @@ def custom_password_reset(request):
     else:
         form = PasswordResetForm()
     return render(request, 'accounts/password_reset_form.html', {'form': form})
-
-
-
-
-def signup(request):
-    if request.method == "POST":
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('login')  # Redirect to login after signup
-    else:
-        form = UserCreationForm()
-    
-    return render(request, 'accounts/signup.html', {'form': form})
