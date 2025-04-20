@@ -24,30 +24,30 @@ from django.contrib.auth.forms import UserCreationForm
 
 
 
-def custom_password_reset(request):
-    if request.method == "POST":
-        form = PasswordResetForm(request.POST)
-        if form.is_valid():
-            # Get the email address from the form
-            email = form.cleaned_data["email"]
+# def custom_password_reset(request):
+#     if request.method == "POST":
+#         form = PasswordResetForm(request.POST)
+#         if form.is_valid():
+#             # Get the email address from the form
+#             email = form.cleaned_data["email"]
             
-            # Get the associated user object
-            users = form.get_users(email)
-            for user in users:
-                # Generate a unique token and email
-                token = default_token_generator.make_token(user)
-                uid = urlsafe_base64_encode(user.pk.encode('utf-8'))
-                token_url = f"{request.scheme}://{get_current_site(request).domain}/password_reset/{uid}/{token}/"
+#             # Get the associated user object
+#             users = form.get_users(email)
+#             for user in users:
+#                 # Generate a unique token and email
+#                 token = default_token_generator.make_token(user)
+#                 uid = urlsafe_base64_encode(user.pk.encode('utf-8'))
+#                 token_url = f"{request.scheme}://{get_current_site(request).domain}/password_reset/{uid}/{token}/"
                 
-                email_subject = "Password Reset"
-                email_message = render_to_string('accounts/password_reset_email.html', {
-                    'user': user,
-                    'token_url': token_url,
-                })
+#                 email_subject = "Password Reset"
+#                 email_message = render_to_string('accounts/password_reset_email.html', {
+#                     'user': user,
+#                     'token_url': token_url,
+#                 })
                 
-                send_mail(email_subject, email_message, 'no-reply@example.com', [email])
+#                 send_mail(email_subject, email_message, 'no-reply@example.com', [email])
                 
-            return redirect('password_reset_done')
-    else:
-        form = PasswordResetForm()
-    return render(request, 'accounts/password_reset_form.html', {'form': form})
+#             return redirect('password_reset_done')
+#     else:
+#         form = PasswordResetForm()
+#     return render(request, 'accounts/password_reset_form.html', {'form': form})
