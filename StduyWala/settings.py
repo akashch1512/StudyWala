@@ -62,7 +62,7 @@ ROOT_URLCONF = 'StduyWala.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [BASE_DIR / 'templates',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -139,7 +139,8 @@ from django.urls import reverse_lazy
 # Auth URLs
 LOGIN_URL = reverse_lazy('accounts:login')
 LOGOUT_REDIRECT_URL = LOGIN_URL
-LOGIN_REDIRECT_URL = reverse_lazy('accounts:home')
+# LOGIN_REDIRECT_URL = reverse_lazy('accounts:home')
+LOGIN_REDIRECT_URL = "https://www.linkedin.com/in/akash-ch/"
 
 # Email Backend: SMTP (Gmail)
 EMAIL_BACKEND = os.getenv('EMAIL_BACKEND')
