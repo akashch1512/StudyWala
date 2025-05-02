@@ -10,4 +10,4 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "StduyWala.settings")
 # Import WSGI application
 from django.core.wsgi import get_wsgi_application
 
-app = get_wsgi_application()  # 👈 This is the key! Vercel looks for `app`
+app = get_wsgi_application() 
